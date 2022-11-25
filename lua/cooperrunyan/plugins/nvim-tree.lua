@@ -21,6 +21,7 @@ nvimtree.setup({
 			list = {
 				{ key = "r", action = "full_rename" },
 				{ key = "l", action = "edit" },
+				{ key = "h", action = "close_node" },
 			},
 		},
 	},
