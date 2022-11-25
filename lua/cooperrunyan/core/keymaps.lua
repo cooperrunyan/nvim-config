@@ -27,6 +27,10 @@ vim.keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>")
 vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>")
 vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>")
 
-vim.keymap.set("n", "<C-s>", "<cmd>:w<cr>")
-vim.keymap.set("i", "<C-s>", "<cmd>:w<cr>")
-vim.keymap.set("x", "<C-s>", "<cmd>:w<cr>")
+-- Write hotkey
+vim.keymap.set("n", "<C-s>", "<cmd>:w<cr><cmd>:Prettier<cr>")
+vim.keymap.set("i", "<C-s>", "<cmd>:w<cr><cmd>:Prettier<cr>")
+vim.keymap.set("v", "<C-s>", "<cmd>:w<cr><cmd>:Prettier<cr>")
+
+-- Terminal
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>:q!<cr>")
